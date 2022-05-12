@@ -39,6 +39,7 @@ namespace blokzinciriekrani
             this.gonderilenparamiktar = new System.Windows.Forms.Label();
             this.butunaktarimlar = new System.Windows.Forms.RichTextBox();
             this.aktarim = new System.Windows.Forms.Label();
+            this.gecerlimi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gonderen
@@ -61,7 +62,7 @@ namespace blokzinciriekrani
             // 
             // ParayiAktar
             // 
-            this.ParayiAktar.Location = new System.Drawing.Point(92, 282);
+            this.ParayiAktar.Location = new System.Drawing.Point(92, 267);
             this.ParayiAktar.Name = "ParayiAktar";
             this.ParayiAktar.Size = new System.Drawing.Size(127, 28);
             this.ParayiAktar.TabIndex = 4;
@@ -96,16 +97,16 @@ namespace blokzinciriekrani
             // 
             // gonderilenpara
             // 
-            this.gonderilenpara.Location = new System.Drawing.Point(110, 219);
+            this.gonderilenpara.Location = new System.Drawing.Point(92, 219);
             this.gonderilenpara.Name = "gonderilenpara";
-            this.gonderilenpara.Size = new System.Drawing.Size(100, 22);
+            this.gonderilenpara.Size = new System.Drawing.Size(118, 22);
             this.gonderilenpara.TabIndex = 8;
             this.gonderilenpara.Text = "10";
             // 
             // gonderilenparamiktar
             // 
             this.gonderilenparamiktar.AutoSize = true;
-            this.gonderilenparamiktar.Location = new System.Drawing.Point(107, 183);
+            this.gonderilenparamiktar.Location = new System.Drawing.Point(98, 183);
             this.gonderilenparamiktar.Name = "gonderilenparamiktar";
             this.gonderilenparamiktar.Size = new System.Drawing.Size(112, 17);
             this.gonderilenparamiktar.TabIndex = 9;
@@ -128,11 +129,22 @@ namespace blokzinciriekrani
             this.aktarim.Size = new System.Drawing.Size(0, 17);
             this.aktarim.TabIndex = 11;
             // 
+            // gecerlimi
+            // 
+            this.gecerlimi.Location = new System.Drawing.Point(92, 328);
+            this.gecerlimi.Name = "gecerlimi";
+            this.gecerlimi.Size = new System.Drawing.Size(127, 32);
+            this.gecerlimi.TabIndex = 12;
+            this.gecerlimi.Text = "Geçerli mi ?";
+            this.gecerlimi.UseVisualStyleBackColor = true;
+            this.gecerlimi.Click += new System.EventHandler(this.gecerlimi_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1021, 545);
+            this.Controls.Add(this.gecerlimi);
             this.Controls.Add(this.aktarim);
             this.Controls.Add(this.butunaktarimlar);
             this.Controls.Add(this.gonderilenparamiktar);
@@ -162,6 +174,7 @@ namespace blokzinciriekrani
         private System.Windows.Forms.Label gonderilenparamiktar;
         private System.Windows.Forms.RichTextBox butunaktarimlar;
         private System.Windows.Forms.Label aktarim;
+        private System.Windows.Forms.Button gecerlimi;
     }
 }
 

@@ -25,5 +25,18 @@ namespace blokzinciriekrani
 
             butunaktarimlar.Text= JsonConvert.SerializeObject(twobCoin, Formatting.Indented);
         }
+
+        private void gecerlimi_Click(object sender, EventArgs e)
+        {
+           bool sonuc= twobCoin.GecerliMi();
+            if(sonuc == true)
+            {
+                aktarim.Text = "Geçerli";
+            }
+            else
+            {
+                aktarim.Text = "Geçerli Değil";
+            }
+        }
     }
 }
